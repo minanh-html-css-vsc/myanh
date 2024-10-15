@@ -1,0 +1,67 @@
+/* Bỏ lề và khoảng đệm cho body */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Định dạng container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Định dạng header */
+.container > header {
+    background-image: url('banner.png');
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 25%; /* Tỉ lệ height/width = 1/4 */
+}
+
+/* Định dạng nav */
+.container > nav {
+    line-height: 40px;
+    background-color: rgba(39, 177, 11, 0.804);
+    color: rgba(14, 1, 1, 0.726);
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* Định dạng link trong nav */
+.container > nav > a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hiệu ứng hover cho link */
+.container > nav > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Định dạng article */
+.container > article {
+    min-height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+
+/* Định dạng aside */
+.container > aside {
+    min-height: 400px;
+    width: 25%;
+    background-color: lightgray;
+    float: right;
+}
+
+/* Định dạng footer */
+.container > footer {
+    border-top: 5px double rgba(0, 255, 4, 0.735);
+    line-height: 50px;
+    background-color: rgba(20, 220, 34, 0.845);
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
